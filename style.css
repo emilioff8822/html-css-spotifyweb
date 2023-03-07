@@ -1,0 +1,100 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.debug{
+  background-color: rgba(255, 0, 0, .2);
+  border: 1px solid #000;
+  min-height: 50px;
+}
+header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+background-color: black;
+color: white;
+height: 75px;
+padding: 5px;
+}
+
+footer {
+display: flex;
+background-color:darkgray;
+justify-content: space-between;
+align-items: center;
+height: 80px;
+}
+
+header button {
+  background-color: black ;
+  color: white;
+  border: 0;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 20px;
+  border: 1px solid white;
+}
+
+main {
+  display: flex;
+  background-color: beige;
+  height: calc(100vh - 155px );
+  overflow-y: auto;
+}
+
+.colonna {
+  width: calc(10%);
+  border: 1px solid black;
+  height: calc(100vh - 155px );
+
+}
+
+.logo {
+  color: white;
+  width: 100px;
+}
+
+.lista1 li {
+  list-style: none;
+  margin: 15px;
+  font-size: .8rem;
+  
+}
+.lista1 {
+  padding-bottom: 20px;
+}
+
+.lista2 li {
+  list-style: none;
+  margin: 15px;
+  font-size: .8rem;
+}
+
+.lista2 {
+  padding-bottom: 50px;
+}
+.in {
+  margin-left: 15px;
+}
+.flex{
+  display: flex;
+}
+.wrap {
+  flex-wrap: wrap;
+}
+.carta {
+  position: relative;
+  width: calc(100% / 7);
+  min-width: 250px;
+  height: 200px;
+  cursor: pointer;
+  background-color: black;
+}
+
+.carta img {
+  width: 100%;
+  object-fit: cover;
+}
