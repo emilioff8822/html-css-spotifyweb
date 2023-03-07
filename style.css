@@ -21,7 +21,7 @@ align-items: center;
 height: 80px;
 }
 
-header button {
+.headercol.due button {
   background-color: black ;
   color: white;
   border: 0;
@@ -35,7 +35,7 @@ header button {
 .row {
   display: flex;
   background-color: beige;
-  height: calc(100vh - 80px );
+  height: 100%
   overflow-y: auto;
 
 }
@@ -44,13 +44,13 @@ header button {
 
 .row > :first-child {
   width: 15%;
-  height: calc(100vh - 80px );
+  
 
 }
 .row > :nth-child(2) {
   width: 85%;
   background-color: aqua;
-  height: calc(100vh - 80px );
+  border: 1px solid black;
 
 }
 
@@ -90,9 +90,15 @@ header button {
 .betw {
   justify-content: space-between;
 }
+.jcentra {
+  justify-content: center;
+}
+.around {
+  justify-content: space-around;
+}
 .carta {
   position: relative;
-  width: calc(100% / 7);
+  width: calc(100% / 6);
   min-width: 250px;
   height: 200px;
   cursor: pointer;
@@ -114,4 +120,43 @@ header button {
 .colonna {
   color: black;
   font-size: .8rem;
+}
+
+.headercol.due {
+  text-align: right;
+}
+
+.rowcarte1{
+  margin-bottom: 200px;
+}
+
+.rowcarte img {
+  
+}
+
+.selezione {
+  margin-bottom: 20px;
+}
+
+.secondoheader {
+  height: 80px;
+  background-color: grey;
+  color: white;
+  width: 100%;
+}
+
+.secondoheader div{
+  font-size: 1.5rem;
+  margin-right: 50px;
+}
+
+
+
+
+/* RESPONSIVE AREA */
+@media all and (max-width:768px){
+
+  .carta{
+    width: calc(100% / 4);
+  }
 }
