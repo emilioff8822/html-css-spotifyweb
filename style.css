@@ -9,16 +9,10 @@
   border: 1px solid #000;
   min-height: 50px;
 }
-header {
-display: flex;
-justify-content: space-between;
-align-items: center;
-background-color: black;
-color: white;
-height: 75px;
-padding: 5px;
-}
+main{
+  overflow: auto;
 
+}
 footer {
 display: flex;
 background-color:darkgray;
@@ -38,17 +32,25 @@ header button {
   border: 1px solid white;
 }
 
-main {
+.row {
   display: flex;
   background-color: beige;
-  height: calc(100vh - 155px );
+  height: calc(100vh - 80px );
   overflow-y: auto;
+
 }
 
-.colonna {
-  width: calc(10%);
-  border: 1px solid black;
-  height: calc(100vh - 155px );
+
+
+.row > :first-child {
+  width: 15%;
+  height: calc(100vh - 80px );
+
+}
+.row > :nth-child(2) {
+  width: 85%;
+  background-color: aqua;
+  height: calc(100vh - 80px );
 
 }
 
@@ -60,7 +62,7 @@ main {
 .lista1 li {
   list-style: none;
   margin: 15px;
-  font-size: .8rem;
+  font-size: .6rem;
   
 }
 .lista1 {
@@ -85,6 +87,9 @@ main {
 .wrap {
   flex-wrap: wrap;
 }
+.betw {
+  justify-content: space-between;
+}
 .carta {
   position: relative;
   width: calc(100% / 7);
@@ -97,4 +102,16 @@ main {
 .carta img {
   width: 100%;
   object-fit: cover;
+}
+
+.headercol {
+  height: 70px;
+  background-color: black;
+  color: white;
+  width: 100%;
+}
+
+.colonna {
+  color: black;
+  font-size: .8rem;
 }
