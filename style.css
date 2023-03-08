@@ -250,7 +250,7 @@ display: none;
   }
 
   .carta3 {
-    width: calc(100% / 3);
+    width: calc(100% / 2);
     background-color:red;
   }
 }
