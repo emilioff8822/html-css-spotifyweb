@@ -28,10 +28,8 @@
   justify-content: space-around;
 }
 
-
 .mainwrapper {
   height: 100vh;
-  
 }
 
 footer {
@@ -51,6 +49,7 @@ aside {
   width: 230px;
   height: 100%;
   flex-shrink: 0;
+  overflow-y: auto;
 }
 
 .content {
@@ -64,10 +63,10 @@ aside {
 
 .cta {
   height: 90px;
-  width: calc(100% - 230px) ;
   position: fixed;
   top: 0;
   right: 0;
+  left: 230px;
 }
 
 
@@ -95,6 +94,7 @@ aside {
 }
 
 .headercol {
+  position: relative;
   height: 90px;
   background-color: lightblue;
   color: white;
@@ -103,6 +103,8 @@ aside {
 .logo {
   width: 150px;
 }
+
+
 
 .headercol.due button {
   background-color: black ;
@@ -120,7 +122,6 @@ aside {
 
 .carta {
   width: calc(100% / 6);
-  min-width: 250px;
   height: 200px;
   cursor: pointer;
   background-color: black;
@@ -135,8 +136,6 @@ aside {
   height: 80px;
   background-color: grey;
   color: white;
-  width: 100%;
-  margin-right: 20px;
   line-height: 80px;
 }
 
@@ -146,12 +145,13 @@ aside {
 
 
 /* RESPONSIVE AREA */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1300px) {
   .container {
     width: 768px;
   }
   .rowcarte1 {
     display: flex;
+    overflow-y: auto;
 
   }
   .carta {
@@ -162,3 +162,21 @@ aside {
 
 }
   
+@media screen and (max-width: 1000px) {
+  .carta {
+    width: calc(100% / 2);
+    background-color:red;
+  }
+
+}
+
+@media screen and (max-width: 800px) {
+  .desktop {
+    display: none;
+  }
+  .logo {
+    display: none;
+  }
+
+  }
+
