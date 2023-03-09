@@ -265,10 +265,12 @@ height: 60px;}
 
 .bar:hover {
   border-bottom: 2px solid green;
-  border-bottom: wd;
+  border;
   cursor: pointer;
 
 }
+
+
 
 /* RESPONSIVE AREA */
 
@@ -285,32 +287,26 @@ height: 60px;}
   }
   .carta {
     width: calc(100% / 4);
-    background-color: blue;
   }
   .carta2 {
     width: calc(100% / 4);
-    background-color: blue;
   }
   .carta3 {
     width: calc(100% / 4);
-    background-color: blue;
   }
 }
   
 @media screen and (max-width: 1000px) {
   .carta {
     width: calc(100% / 2);
-    background-color:red;
   }
 
   .carta2 {
     width: calc(100% / 2);
-    background-color:red;
   }
 
   .carta3 {
     width: calc(100% / 2);
-    background-color:red;
   }
 }
 
