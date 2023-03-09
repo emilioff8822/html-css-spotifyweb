@@ -123,6 +123,7 @@ aside {
 }
 
 .carta {
+  position: relative;
   width: calc(100% / 6);
   height: 250px;
   cursor: pointer;
@@ -131,6 +132,8 @@ aside {
 }
 
 .carta2 {
+  position: relative;
+
   width: calc(100% / 6);
   height: 250px;
   cursor: pointer;
@@ -139,6 +142,8 @@ aside {
 }
 
 .carta3 {
+  position: relative;
+
   width: calc(100% / 6);
   height: 250px;
   cursor: pointer;
@@ -203,13 +208,47 @@ display: none;
   padding: 10px;
 }
 
+img {
+  transition: all 1s;
+}
+
+.play {
+  position: absolute;
+  color: white;
+  font-size: 4rem;
+  top: 90px;
+  left: 100px;
+  display: none;
+}
+
+
+.carta img:hover {
+  opacity: 0.5;
+}
+
+.carta2 img:hover {
+  opacity: 0.5;
+}
+
+.carta3 img:hover {
+  opacity: 0.5;
+}
+
+.carta:hover .play{
+  display: block;
+}
+
+.bar {
+height: 60px;}
 
 
 
+.bar:hover {
+  border-bottom: 2px solid green;
+  border-bottom: wd;
+  cursor: pointer;
 
-
-
-
+}
 
 /* RESPONSIVE AREA */
 
