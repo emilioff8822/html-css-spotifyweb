@@ -10,6 +10,22 @@
   min-height: 50px;
 }
 
+aside {
+  background-color: black;
+  color: darkgray;
+}
+
+aside li,
+aside p {
+  cursor: pointer;
+}
+aside li:hover {
+  color: white;
+}
+aside p:hover{
+  color: white;
+
+}
 
 /*UTILITIES*/
 .flex{
@@ -98,7 +114,7 @@ aside {
 .headercol {
   position: relative;
   height: 90px;
-  background-color: lightblue;
+  background-color: black;
   color: white;
   width: 100%;
 }
@@ -169,7 +185,7 @@ aside {
 
 .secondoheader {
   height: 80px;
-  background-color: grey;
+  background-color: black;
   color: white;
   line-height: 80px;
 }
